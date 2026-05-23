@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Golf With Your Friends — Scoreboard</title>
+<style>
+:root {
+  --bg: #0e1117; --card: #161b22; --border: #30363d; --text: #e6edf3;
+  --muted: #8b949e; --accent: #2ea043; --gold: #f0b84a; --red: #f85149;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  background: var(--bg); color: var(--text); line-height: 1.45;
+}
+.wrap { max-width: 1100px; margin: 0 auto; padding: 24px 20px 64px; }
+header { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 24px; }
+h1 { margin: 0; font-size: 28px; letter-spacing: -0.01em; }
+h2 { font-size: 18px; margin: 28px 0 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+.sub { color: var(--muted); font-size: 14px; }
+section { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 16px 18px; margin-top: 12px; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border); }
+th { font-weight: 600; color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; }
+tbody tr:last-child td { border-bottom: none; }
+td.num { text-align: right; font-variant-numeric: tabular-nums; }
+td.rank { width: 36px; color: var(--muted); }
+.lb tbody tr:first-child td:nth-child(2) { color: var(--gold); font-weight: 600; }
+.empty { color: var(--muted); margin: 8px 0; }
+.rounds { display: flex; flex-direction: column; gap: 8px; }
+details.round { background: rgba(255,255,255,0.02); border: 1px solid var(--border); border-radius: 6px; padding: 8px 12px; }
+details.round summary { display: flex; gap: 12px; align-items: center; cursor: pointer; list-style: none; }
+details.round summary::-webkit-details-marker { display: none; }
+details.round summary .when { color: var(--muted); font-variant-numeric: tabular-nums; width: 140px; flex-shrink: 0; }
+details.round summary .winner { flex: 1; }
+details.round summary .meta { color: var(--muted); font-size: 12px; }
+details.round[open] { background: rgba(255,255,255,0.04); }
+details.round .notes { color: var(--muted); margin: 8px 0 0; }
+details.round .detail { margin-top: 10px; }
+.h2h th { text-align: center; }
+.h2h th:first-child { text-align: left; }
+.h2h td { text-align: center; font-variant-numeric: tabular-nums; }
+.h2h td.diag { color: var(--border); }
+.h2h td.nodata { color: var(--muted); }
+.h2h td.win { color: var(--accent); }
+.h2h td.loss { color: var(--red); }
+.caption { color: var(--muted); font-size: 12px; margin: 8px 0 0; }
+footer { color: var(--muted); font-size: 12px; margin-top: 32px; text-align: center; }
+code { background: rgba(255,255,255,0.06); padding: 1px 5px; border-radius: 3px; font-size: 90%; }
+.detail-scroll { overflow-x: auto; }
+.detail .strong { font-weight: 600; }
+.courses { display: flex; flex-direction: column; gap: 16px; }
+.course h3 { margin: 0 0 8px; font-size: 16px; display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px; }
+.course-meta { color: var(--muted); font-size: 12px; font-weight: 400; text-transform: none; letter-spacing: 0; }
+.course-tbl tbody tr:first-child td:first-child { color: var(--gold); font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Golf With Your Friends Scoreboard</h1>
+      <div class="sub">3 round(s) tracked · 3 active player(s)</div>
+    </div>
+    <div class="sub">Updated 2026-05-23 17:40</div>
+  </header>
+
+  <h2>Leaderboard</h2>
+  <section><table class='lb'><thead><tr><th>#</th><th>Player</th><th>Wins</th><th>Rounds</th><th>Avg</th><th>Best</th><th>Worst</th></tr></thead><tbody><tr><td class='rank'>1</td><td>Botanical</td><td class='num'>1</td><td class='num'>3</td><td class='num'>65.7</td><td class='num'>52</td><td class='num'>84</td></tr><tr><td class='rank'>2</td><td>Flav</td><td class='num'>1</td><td class='num'>3</td><td class='num'>67.3</td><td class='num'>46</td><td class='num'>81</td></tr><tr><td class='rank'>3</td><td>MythicalClitoris</td><td class='num'>1</td><td class='num'>3</td><td class='num'>69.7</td><td class='num'>54</td><td class='num'>80</td></tr></tbody></table></section>
+
+  <h2>By course</h2>
+  <section><div class='courses'><div class='course'><h3>Bouncy Castle<span class='course-meta'>1 round(s) · 18 holes · par 60</span></h3><table class='course-tbl'><thead><tr><th>Player</th><th>Wins</th><th>Rounds</th><th>Best</th><th>Avg</th></tr></thead><tbody><tr><td>Flav</td><td class='num'>1</td><td class='num'>1</td><td class='num'>46</td><td class='num'>46.0</td></tr><tr><td>Botanical</td><td class='num'>0</td><td class='num'>1</td><td class='num'>52</td><td class='num'>52.0</td></tr><tr><td>MythicalClitoris</td><td class='num'>0</td><td class='num'>1</td><td class='num'>54</td><td class='num'>54.0</td></tr></tbody></table></div><div class='course'><h3>Haunted<span class='course-meta'>1 round(s) · 18 holes</span></h3><table class='course-tbl'><thead><tr><th>Player</th><th>Wins</th><th>Rounds</th><th>Best</th><th>Avg</th></tr></thead><tbody><tr><td>Botanical</td><td class='num'>1</td><td class='num'>1</td><td class='num'>61</td><td class='num'>61.0</td></tr><tr><td>MythicalClitoris</td><td class='num'>0</td><td class='num'>1</td><td class='num'>75</td><td class='num'>75.0</td></tr><tr><td>Flav</td><td class='num'>0</td><td class='num'>1</td><td class='num'>75</td><td class='num'>75.0</td></tr></tbody></table></div><div class='course'><h3>The Deep<span class='course-meta'>1 round(s) · 18 holes</span></h3><table class='course-tbl'><thead><tr><th>Player</th><th>Wins</th><th>Rounds</th><th>Best</th><th>Avg</th></tr></thead><tbody><tr><td>MythicalClitoris</td><td class='num'>1</td><td class='num'>1</td><td class='num'>80</td><td class='num'>80.0</td></tr><tr><td>Flav</td><td class='num'>0</td><td class='num'>1</td><td class='num'>81</td><td class='num'>81.0</td></tr><tr><td>Botanical</td><td class='num'>0</td><td class='num'>1</td><td class='num'>84</td><td class='num'>84.0</td></tr></tbody></table></div></div></section>
+
+  <h2>Recent rounds</h2>
+  <section><div class='rounds'><details class='round'><summary><span class='when'>2026-05-23 17:36</span><span class='winner'>🏆 Flav (46)</span><span class='meta'>#3 · Bouncy Castle</span></summary><div class='detail-scroll'><table class='detail'><thead><tr><th>Place</th><th>Player</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th><th>13</th><th>14</th><th>15</th><th>16</th><th>17</th><th>18</th><th>Total</th></tr></thead><tbody><tr><td class='rank'>1</td><td>Flav</td><td class='num'>1</td><td class='num'>1</td><td class='num'>2</td><td class='num'>2</td><td class='num'>2</td><td class='num'>2</td><td class='num'>3</td><td class='num'>1</td><td class='num'>1</td><td class='num'>1</td><td class='num'>5</td><td class='num'>3</td><td class='num'>4</td><td class='num'>1</td><td class='num'>5</td><td class='num'>5</td><td class='num'>5</td><td class='num'>2</td><td class='num strong'>46</td></tr><tr><td class='rank'>2</td><td>Botanical</td><td class='num'>1</td><td class='num'>1</td><td class='num'>3</td><td class='num'>4</td><td class='num'>3</td><td class='num'>4</td><td class='num'>2</td><td class='num'>1</td><td class='num'>2</td><td class='num'>3</td><td class='num'>5</td><td class='num'>3</td><td class='num'>3</td><td class='num'>3</td><td class='num'>4</td><td class='num'>4</td><td class='num'>4</td><td class='num'>2</td><td class='num strong'>52</td></tr><tr><td class='rank'>3</td><td>MythicalClitoris</td><td class='num'>1</td><td class='num'>1</td><td class='num'>2</td><td class='num'>4</td><td class='num'>2</td><td class='num'>3</td><td class='num'>3</td><td class='num'>2</td><td class='num'>1</td><td class='num'>3</td><td class='num'>4</td><td class='num'>4</td><td class='num'>2</td><td class='num'>5</td><td class='num'>5</td><td class='num'>4</td><td class='num'>5</td><td class='num'>3</td><td class='num strong'>54</td></tr></tbody></table></div></details><details class='round'><summary><span class='when'>2026-05-23 17:36</span><span class='winner'>🏆 Botanical (61)</span><span class='meta'>#2 · Haunted</span></summary><div class='detail-scroll'><table class='detail'><thead><tr><th>Place</th><th>Player</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th><th>13</th><th>14</th><th>15</th><th>16</th><th>17</th><th>18</th><th>Total</th></tr></thead><tbody><tr><td class='rank'>1</td><td>Botanical</td><td class='num'>2</td><td class='num'>2</td><td class='num'>2</td><td class='num'>4</td><td class='num'>3</td><td class='num'>2</td><td class='num'>3</td><td class='num'>4</td><td class='num'>5</td><td class='num'>3</td><td class='num'>3</td><td class='num'>3</td><td class='num'>3</td><td class='num'>2</td><td class='num'>4</td><td class='num'>4</td><td class='num'>6</td><td class='num'>6</td><td class='num strong'>61</td></tr><tr><td class='rank'>2</td><td>Flav</td><td class='num'>1</td><td class='num'>3</td><td class='num'>3</td><td class='num'>4</td><td class='num'>3</td><td class='num'>3</td><td class='num'>4</td><td class='num'>2</td><td class='num'>6</td><td class='num'>3</td><td class='num'>2</td><td class='num'>5</td><td class='num'>6</td><td class='num'>1</td><td class='num'>3</td><td class='num'>6</td><td class='num'>6</td><td class='num'>14</td><td class='num strong'>75</td></tr><tr><td class='rank'>2</td><td>MythicalClitoris</td><td class='num'>2</td><td class='num'>2</td><td class='num'>2</td><td class='num'>9</td><td class='num'>2</td><td class='num'>3</td><td class='num'>5</td><td class='num'>3</td><td class='num'>3</td><td class='num'>3</td><td class='num'>5</td><td class='num'>3</td><td class='num'>6</td><td class='num'>4</td><td class='num'>2</td><td class='num'>4</td><td class='num'>3</td><td class='num'>14</td><td class='num strong'>75</td></tr></tbody></table></div></details><details class='round'><summary><span class='when'>2026-05-23 17:35</span><span class='winner'>🏆 MythicalClitoris (80)</span><span class='meta'>#1 · The Deep</span></summary><div class='detail-scroll'><table class='detail'><thead><tr><th>Place</th><th>Player</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th><th>13</th><th>14</th><th>15</th><th>16</th><th>17</th><th>18</th><th>Total</th></tr></thead><tbody><tr><td class='rank'>1</td><td>MythicalClitoris</td><td class='num'>2</td><td class='num'>1</td><td class='num'>3</td><td class='num'>3</td><td class='num'>2</td><td class='num'>14</td><td class='num'>2</td><td class='num'>1</td><td class='num'>3</td><td class='num'>3</td><td class='num'>2</td><td class='num'>4</td><td class='num'>4</td><td class='num'>11</td><td class='num'>8</td><td class='num'>4</td><td class='num'>4</td><td class='num'>9</td><td class='num strong'>80</td></tr><tr><td class='rank'>2</td><td>Flav</td><td class='num'>2</td><td class='num'>2</td><td class='num'>3</td><td class='num'>4</td><td class='num'>1</td><td class='num'>4</td><td class='num'>7</td><td class='num'>3</td><td class='num'>7</td><td class='num'>5</td><td class='num'>5</td><td class='num'>5</td><td class='num'>7</td><td class='num'>4</td><td class='num'>10</td><td class='num'>4</td><td class='num'>4</td><td class='num'>4</td><td class='num strong'>81</td></tr><tr><td class='rank'>3</td><td>Botanical</td><td class='num'>2</td><td class='num'>2</td><td class='num'>4</td><td class='num'>1</td><td class='num'>1</td><td class='num'>14</td><td class='num'>4</td><td class='num'>1</td><td class='num'>5</td><td class='num'>3</td><td class='num'>4</td><td class='num'>7</td><td class='num'>5</td><td class='num'>6</td><td class='num'>7</td><td class='num'>5</td><td class='num'>5</td><td class='num'>8</td><td class='num strong'>84</td></tr></tbody></table></div></details></div></section>
+
+  <h2>Head-to-head</h2>
+  <section><table class='h2h'><thead><tr><th></th><th>Botanical</th><th>Flav</th><th>MythicalClitoris</th></tr></thead><tbody><tr><th>Botanical</th><td class='diag'>—</td><td class='loss'>1–2</td><td class='win'>2–1</td></tr><tr><th>Flav</th><td class='win'>2–1</td><td class='diag'>—</td><td class='tied'>1–1 (t1)</td></tr><tr><th>MythicalClitoris</th><td class='loss'>1–2</td><td class='tied'>1–1 (t1)</td><td class='diag'>—</td></tr></tbody></table><p class='caption'>Row vs. column. Format <code>A–B (tN)</code> = row-player wins–column-player wins–ties.</p></section>
+
+  <footer>Auto-published by <a href="https://github.com/anthropics/claude-code" style="color: inherit;">GWF Score Tracker</a></footer>
+</div>
+</body>
+</html>
