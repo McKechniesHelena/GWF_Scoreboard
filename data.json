@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-24T14:14:29",
+  "generated_at": "2026-05-24T14:14:46",
   "standard": {
     "leaderboard": [
       {
@@ -825,8 +825,27 @@
         "name": "The Deep",
         "rounds_played": 1,
         "hole_count": 18,
-        "pars": null,
-        "par_total": null,
+        "pars": [
+          2,
+          2,
+          2,
+          3,
+          3,
+          3,
+          4,
+          4,
+          4,
+          4,
+          3,
+          4,
+          4,
+          5,
+          4,
+          4,
+          4,
+          5
+        ],
+        "par_total": 64,
         "players": [
           {
             "player_id": 1,
