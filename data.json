@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-24T14:14:07",
+  "generated_at": "2026-05-24T14:14:29",
   "standard": {
     "leaderboard": [
       {
@@ -391,8 +391,27 @@
         "name": "Haunted",
         "rounds_played": 1,
         "hole_count": 18,
-        "pars": null,
-        "par_total": null,
+        "pars": [
+          2,
+          2,
+          3,
+          4,
+          4,
+          4,
+          3,
+          4,
+          5,
+          2,
+          2,
+          4,
+          4,
+          3,
+          4,
+          5,
+          5,
+          5
+        ],
+        "par_total": 65,
         "players": [
           {
             "player_id": 3,
