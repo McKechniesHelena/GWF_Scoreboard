@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-24T14:14:46",
+  "generated_at": "2026-05-24T14:15:05",
   "standard": {
     "leaderboard": [
       {
@@ -578,8 +578,27 @@
         "name": "Peaceful Pines",
         "rounds_played": 1,
         "hole_count": 18,
-        "pars": null,
-        "par_total": null,
+        "pars": [
+          2,
+          3,
+          2,
+          3,
+          3,
+          3,
+          2,
+          2,
+          3,
+          3,
+          4,
+          3,
+          3,
+          3,
+          3,
+          3,
+          4,
+          4
+        ],
+        "par_total": 53,
         "players": [
           {
             "player_id": 3,
