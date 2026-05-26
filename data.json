@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-05-25T20:36:11",
+  "generated_at": "2026-05-25T20:40:19",
   "standard": {
     "leaderboard": [
       {
         "player_id": 3,
         "name": "Botanical",
-        "rounds_played": 10,
+        "rounds_played": 11,
         "wins": 8,
-        "avg_total": 49.2,
+        "avg_total": 50.63636363636363,
         "best_total": 33,
-        "worst_total": 61
+        "worst_total": 65
       },
       {
         "player_id": 2,
         "name": "Flav",
-        "rounds_played": 10,
-        "wins": 2,
-        "avg_total": 54.1,
+        "rounds_played": 11,
+        "wins": 3,
+        "avg_total": 54.45454545454545,
         "best_total": 35,
         "worst_total": 75
       },
       {
         "player_id": 1,
         "name": "MythicalClitoris",
-        "rounds_played": 10,
+        "rounds_played": 11,
         "wins": 1,
-        "avg_total": 55.8,
+        "avg_total": 57.90909090909091,
         "best_total": 41,
-        "worst_total": 75
+        "worst_total": 79
       }
     ],
     "courses": [
@@ -1694,6 +1694,193 @@
             ]
           }
         ]
+      },
+      {
+        "course_id": 12,
+        "name": "Worms",
+        "rounds_played": 1,
+        "hole_count": 18,
+        "pars": [
+          0,
+          13,
+          0,
+          13,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          13,
+          1,
+          1
+        ],
+        "par_total": 43,
+        "players": [
+          {
+            "player_id": 2,
+            "name": "Flav",
+            "rounds": 1,
+            "wins": 1,
+            "best_total": 58,
+            "avg_total": 58.0
+          },
+          {
+            "player_id": 3,
+            "name": "Botanical",
+            "rounds": 1,
+            "wins": 0,
+            "best_total": 65,
+            "avg_total": 65.0
+          },
+          {
+            "player_id": 1,
+            "name": "MythicalClitoris",
+            "rounds": 1,
+            "wins": 0,
+            "best_total": 79,
+            "avg_total": 79.0
+          }
+        ],
+        "per_hole": [
+          {
+            "player_id": 2,
+            "name": "Flav",
+            "avgs": [
+              1.0,
+              2.0,
+              2.0,
+              2.0,
+              3.0,
+              2.0,
+              3.0,
+              2.0,
+              8.0,
+              1.0,
+              6.0,
+              5.0,
+              1.0,
+              4.0,
+              5.0,
+              3.0,
+              4.0,
+              4.0
+            ],
+            "counts": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "player_id": 3,
+            "name": "Botanical",
+            "avgs": [
+              2.0,
+              1.0,
+              3.0,
+              1.0,
+              1.0,
+              4.0,
+              3.0,
+              2.0,
+              5.0,
+              4.0,
+              4.0,
+              8.0,
+              1.0,
+              7.0,
+              5.0,
+              4.0,
+              6.0,
+              4.0
+            ],
+            "counts": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "player_id": 1,
+            "name": "MythicalClitoris",
+            "avgs": [
+              2.0,
+              1.0,
+              2.0,
+              2.0,
+              2.0,
+              2.0,
+              5.0,
+              3.0,
+              14.0,
+              6.0,
+              5.0,
+              6.0,
+              2.0,
+              4.0,
+              4.0,
+              3.0,
+              10.0,
+              6.0
+            ],
+            "counts": [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          }
+        ]
       }
     ],
     "head_to_head": [
@@ -1701,27 +1888,27 @@
         "a": 3,
         "b": 2,
         "a_wins": 8,
-        "b_wins": 2,
+        "b_wins": 3,
         "ties": 0
       },
       {
         "a": 3,
         "b": 1,
-        "a_wins": 8,
+        "a_wins": 9,
         "b_wins": 1,
         "ties": 1
       },
       {
         "a": 2,
         "b": 3,
-        "a_wins": 2,
+        "a_wins": 3,
         "b_wins": 8,
         "ties": 0
       },
       {
         "a": 2,
         "b": 1,
-        "a_wins": 6,
+        "a_wins": 7,
         "b_wins": 3,
         "ties": 1
       },
@@ -1729,19 +1916,19 @@
         "a": 1,
         "b": 3,
         "a_wins": 1,
-        "b_wins": 8,
+        "b_wins": 9,
         "ties": 1
       },
       {
         "a": 1,
         "b": 2,
         "a_wins": 3,
-        "b_wins": 6,
+        "b_wins": 7,
         "ties": 1
       }
     ],
     "players": 3,
-    "rounds": 10
+    "rounds": 11
   },
   "random_shapes": {
     "leaderboard": [
@@ -2197,6 +2384,94 @@
     "rounds": 2
   },
   "recent_rounds": [
+    {
+      "id": 13,
+      "played_at": "2026-05-25T20:40:18",
+      "course": "Worms",
+      "course_id": 12,
+      "notes": null,
+      "is_random_shapes": false,
+      "scores": [
+        {
+          "player_id": 2,
+          "name": "Flav",
+          "total": 58,
+          "place": 1,
+          "holes": {
+            "1": 1,
+            "2": 2,
+            "3": 2,
+            "4": 2,
+            "5": 3,
+            "6": 2,
+            "7": 3,
+            "8": 2,
+            "9": 8,
+            "10": 1,
+            "11": 6,
+            "12": 5,
+            "13": 1,
+            "14": 4,
+            "15": 5,
+            "16": 3,
+            "17": 4,
+            "18": 4
+          }
+        },
+        {
+          "player_id": 3,
+          "name": "Botanical",
+          "total": 65,
+          "place": 2,
+          "holes": {
+            "1": 2,
+            "2": 1,
+            "3": 3,
+            "4": 1,
+            "5": 1,
+            "6": 4,
+            "7": 3,
+            "8": 2,
+            "9": 5,
+            "10": 4,
+            "11": 4,
+            "12": 8,
+            "13": 1,
+            "14": 7,
+            "15": 5,
+            "16": 4,
+            "17": 6,
+            "18": 4
+          }
+        },
+        {
+          "player_id": 1,
+          "name": "MythicalClitoris",
+          "total": 79,
+          "place": 3,
+          "holes": {
+            "1": 2,
+            "2": 1,
+            "3": 2,
+            "4": 2,
+            "5": 2,
+            "6": 2,
+            "7": 5,
+            "8": 3,
+            "9": 14,
+            "10": 6,
+            "11": 5,
+            "12": 6,
+            "13": 2,
+            "14": 4,
+            "15": 4,
+            "16": 3,
+            "17": 10,
+            "18": 6
+          }
+        }
+      ]
+    },
     {
       "id": 12,
       "played_at": "2026-05-25T20:36:10",
@@ -3256,7 +3531,7 @@
   ],
   "totals": {
     "players": 3,
-    "rounds": 12,
-    "courses": 9
+    "rounds": 13,
+    "courses": 10
   }
 }
