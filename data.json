@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-28T21:29:21",
+  "generated_at": "2026-05-28T21:30:37",
   "standard": {
     "leaderboard": [
       {
@@ -607,8 +607,8 @@
           3,
           4,
           5,
-          2,
-          2,
+          3,
+          3,
           4,
           4,
           3,
@@ -617,7 +617,7 @@
           5,
           5
         ],
-        "par_total": 65,
+        "par_total": 67,
         "players": [
           {
             "player_id": 3,
