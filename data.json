@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-28T21:28:59",
+  "generated_at": "2026-05-28T21:29:21",
   "standard": {
     "leaderboard": [
       {
@@ -972,26 +972,26 @@
         "rounds_played": 1,
         "hole_count": 18,
         "pars": [
-          13,
+          3,
           2,
           2,
-          0,
           4,
-          13,
-          13,
-          13,
-          13,
-          13,
-          13,
           4,
-          0,
-          0,
-          0,
-          0,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          4,
+          4,
+          4,
+          4,
+          4,
           3,
           4
         ],
-        "par_total": 110,
+        "par_total": 60,
         "players": [
           {
             "player_id": 1,
